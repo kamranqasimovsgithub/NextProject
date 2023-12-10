@@ -1,0 +1,126 @@
+.hero-content-cover{
+    height: 460px !important;
+    background-color: rgb(174, 190, 185);
+    background-color: rgb(52, 65, 61);
+    background-size: cover;
+}
+
+
+.hero-content-cover .container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.hero-content-cover .container > *{
+    margin: 10px;
+    /* border: 3px solid red; */
+}
+
+.hero-content-cover-img{
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.hero-content-cover-img img{
+    border-radius: 10px;
+    max-width: 400px !important;
+}
+
+
+
+.hero-content-cover .hero-content-text{
+    /* height: 320px; */
+    width: 760px;
+    background: inherit;
+    border-radius: 15px;
+    border: 1px solid rgba(43, 43, 43, 0.568);
+    position: absolute;
+    overflow: hidden;
+    padding: 10px 50px 10px 10px;
+}
+
+.hero-content-cover .hero-content-text::before{
+    position: absolute;
+    content: '';
+    background: inherit;
+    /* height: 370px; */
+    width: 1300px;
+    right: 0;
+    left: -25px;
+
+    top: -25px;
+    bottom: 0;
+    box-shadow: inset 0 0 0 3000px rgba(250, 250, 150, 0.192);
+    filter: blur(10px);
+    border-radius: 15px;
+}
+
+
+.hero-content-cover .hero-content-text h2 {
+    font-size: 44px;
+    color: aliceblue;
+    
+}
+
+.hero-content-cover .hero-content-text p.hero-content-text-1 {
+    background: rgb(240, 243, 80) !important;
+    color: rgb(44, 40, 40);
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px;
+    margin: 10px auto;
+}
+
+.hero-content-cover .hero-content-text p.hero-content-text-2 {
+    margin: 10px auto;
+    margin-left: 0;
+    max-width: 500px;
+}
+
+
+@media screen and (max-width:800px) {
+    .hero-content-cover .container{
+        flex-direction: column;
+    }
+
+    .hero-content-cover-img img{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .hero-content-cover-img img{
+        width: 100%;
+    }
+}
+
+#timer {
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    padding: 10px 0;
+    width: 500px;
+    color: white;
+    /* background: #903; */
+}
+
+#timer div {
+    display: inline-block;
+    width: 90px;
+    padding: 15px;
+    background: #9ea0a8;
+    border-radius: 10px;
+    border: 2px solid #030d52;
+    margin: 15px;
+    text-align: center;
+}
+
+#timer div span {
+    color: #ffffff;
+    display: block;
+    margin-top: 15px;
+    font-size: .35em;
+    font-weight: 400;
+}

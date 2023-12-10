@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+
+
+.calendar-issues-container {
+  height: auto;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  user-select: none;
+  padding-top: 60px;
+}
+
+.card-search{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  user-select: none;
+}
+
+.card {
+  width: 316px;
+  height: fit-content;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #efefef;
+}
+
+.calendar-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #efefef;
+}
+
+.calendar-toolbar > .current-month {
+  font-size: 20px;
+  font-weight: bold;
+  color: #19181a;
+}
+
+.calendar-toolbar > [class$="month-btn"] {
+  width: 40px;
+  aspect-ratio: 1;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: #19181a;
+  background: #f8f7fa;
+  border: none;
+  border-radius: 15px;
+}
+
+.weekdays,
+.calendar-days {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 18px;
+}
+.weekdays {
+  padding-top: 12px;
+}
+.calendar-days {
+  padding-bottom: 12px;
+}
+
+.weekday-name,
+[class$="-day"] {
+  width: 40px;
+  height: 40px;
+  color: #19181a;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.weekday-name {
+  color: #19181a;
+  font-weight: 700;
+}
+
+.current-day {
+  background-color: rgb(112, 71, 235);
+  color: #f8f7fa;
+  border-radius: 15px;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.padding-day {
+  color: #a5a5a5;
+  user-select: none;
+}
+
+.calendar-toolbar > [class$="month-btn"]:hover,
+.month-day:hover,
+.btn:hover {
+  border-radius: 15px;
+  background-color: #f8f7fa;
+  color: rgb(112, 71, 235);
+  transition: 0.1s;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 1.5px rgb(112, 71, 235);
+}
+
+.calendar-toolbar > [class$="month-btn"]:focus,
+.month-day:focus,
+.btn:focus {
+  border-radius: 15px;
+  background-color: rgb(112, 71, 235);
+  color: #f8f7fa;
+}
+
+.goto-buttons {
+  border-top: 1px solid #efefef;
+  padding-block: 18px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  background: #f8f7fa;
+  border: none;
+  border-radius: 15px;
+  padding: 11px 13px;
+  color: #19181a;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 1px;
+  box-shadow: 0px 0px 0px #efefef;
+}
+
+
+@import "compass/css3";
+
+.board {
+  display: flex;
+  height: 15em;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: auto;
+}
+
+.row-square {
+  display: flex;
+  height: 2em;
+  width: 18em;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(155,218,155);
+  width: 12.5%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.row-square .square {
+   background-color: #f8f7fa;
+   font-weight: 600;
+   color: #6a6363;
+ }
+
+
+
+ .amount-container {
+    width: 1042px;
+    margin: 0 auto;
+  }
+  
+
+  .amount_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-center;
+    justify-content:center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+    padding: 20px 0;
+  }
+  .amount_item {
+    -ms-flex-preferred-size: calc(30.33333% - 100px);
+    flex-basis: calc(23.33333% - 100px);
+    text-align: center;
+    margin: 0 15px 30px;
+    height: 100px;
+    overflow: hidden;
+  
+    border-radius: 28px;
+  }
+  
+  .amount-item_link {
+    display: block;
+    padding: 20px 15px;
+    background-color: #544343;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+  }
+  .amount-item_link:hover,
+  .amount-item_link:hover .amount-item_date {
+    text-decoration: none;
+    color: #FFF;
+  }
+  .amount-item_link:hover .amount-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+  }
+  .amount-item_title {
+    min-height: 50px;
+    margin: 0 0 25px;
+  
+    overflow: hidden;
+  
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFF;
+  
+    z-index: 2;
+    position: relative;
+  }
+  .amount-item_date-box {
+    font-size: 18px;
+    color: #FFF;
+  
+    z-index: 2;
+    position: relative;
+  }
+  .amount-item_date {
+    font-weight: bold;
+    color: #f9b234;
+  
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease
+  }
+  .amount-item_bg {
+    height: 128px;
+    width: 120px;
+    background-color: #f9b234;
+  
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+  
+    border-radius: 50%;
+  
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .amount_item:nth-child(2n) .amount-item_bg {
+    background-color: #3ecd5e;
+  }
+  .amount_item:nth-child(3n) .amount-item_bg {
+    background-color: #e44002;
+  }
+  
+  
+  @media only screen and (max-width: 979px) {
+    
+    .amount_item {
+      -ms-flex-preferred-size: calc(50% - 30px);
+      flex-basis: calc(50% - 30px);
+    }
+    .amount-item_title {
+      font-size: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .amount-container {
+        max-width: 90%;
+      }
+    .ag-format-container {
+      width: 86%;
+    }
+  
+  }
+  @media only screen and (max-width: 639px) {
+    .amount_item {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 60%;
+    }
+    .amount-item_title {
+      min-height: 72px;
+      line-height: 1;
+  
+      font-size: 20px;
+    }
+    .amount-item_link {
+      padding: 22px 40px;
+    }
+    .amount-item_date-box {
+      font-size: 16px;
+    }
+  }
+
+
+  /* Capacity */
+
+  .capacity-container {
+    width: auto;
+    margin: 0 auto;
+  }
+  
+
+  .capacity_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: center;
+    justify-content:space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+    padding: 20px 0;
+  }
+  .capacity_item {
+    -ms-flex-preferred-size: calc(30.33333% - 100px);
+    flex-basis: calc(23.33333% - 30px);
+    text-align: center;
+    margin: 0 15px 30px;
+    height: 90px;
+    overflow: hidden;
+  
+    border-radius: 20px;
+  }
+  .capacity_item i {
+    color: #1a837d !important;
+  }
+  .capacity-item_link {
+    display: block;
+    padding: 20px 15px;
+    background-color: #B2C8BA;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+  }
+  .capacity-item_link:hover,
+  .capacity-item_link:hover .capacity-item_date {
+    text-decoration: none;
+    color: #FFF;
+  }
+  .capacity-item_link:hover .capacity-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+  }
+  .capacity-item_title {
+    min-height: 50px;
+    margin: 0 0 25px;
+  
+    overflow: hidden;
+  
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFF;
+  
+    z-index: 2;
+    position: relative;
+  }
+  .capacity-item_date-box {
+    font-size: 18px;
+    color: #FFF;
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+  }
+  .capacity-item_date {
+    font-weight: bold;
+    color: #f9b234;
+  
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease
+  }
+  
+  
+  @media only screen and (max-width: 979px) {
+    .capacity_item {
+      -ms-flex-preferred-size: calc(50% - 30px);
+      flex-basis: calc(50% - 30px);
+    }
+    .capacity-item_title {
+      font-size: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .capacity-container {
+      width: 86%;
+    }
+  
+  }
+  @media only screen and (max-width: 639px) {
+    .capacity-container{
+        width: 100%;
+    }
+    .capacity-item {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+    }
+    .capacity-item_title {
+      min-height: 72px;
+      line-height: 1;
+  
+      font-size: 20px;
+    }
+    .capacity-item_link {
+      padding: 22px 40px;
+    }
+    .capacity-item_date-box {
+      font-size: 16px;
+    }
+  }
+

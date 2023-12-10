@@ -1,0 +1,233 @@
+
+
+.main{
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    background-image: url('../image/main-bg.png');
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat ;
+    color: #fff;
+}
+
+.main::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main{
+	font-size: 16px;
+	letter-spacing: 2px;
+	/* border-bottom: 5px solid #fff;
+	border-top: 5px solid #fff; */
+	border-radius: 35px;
+    padding: 10px 15px;
+}
+.main-navbar{
+    position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content:  space-between;
+	padding: 20px;	
+    padding-right: 80px;
+    width: 100%;
+}
+
+
+ul{
+	display: flex;
+}
+
+li{
+	margin-left: 27px;
+}
+
+/* li:first-child{
+	margin-right: 70px;
+} */
+
+
+.main-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    border: 1px solid #fff;
+    padding: 40px;
+    padding-top: 60px;
+}
+
+
+.main h1{
+	font-size: 6.5rem;
+	font-weight: 100;
+	line-height: 0.4;
+	letter-spacing: 0.4;
+	font-family: 'Water Brush', cursive;
+	/* color: #745b37; */
+    margin-bottom: 20px;
+}
+
+
+.first-letter{
+	font-size: 8.1rem;
+	font-family: 'Water Brush', cursive;
+	/* color: #745b37; */
+}
+
+h3{
+	margin-top: 20px;
+	margin-bottom: 25px;
+	font-size: 22px;
+    
+}
+
+.btn-coffee{
+	display: block;
+	background-color: #745b37;
+	color: #fff;
+	padding: 10px 15px;
+	border-top-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.btn-coffee::after{
+	content: "Axtarış";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: brown;
+	height: 100%;	
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+
+
+.btn-coffee:hover::after{
+	top: 0;
+}
+
+
+.blink{
+    text-align: center;
+}
+.blink-text{
+    font-size: 25px;
+    font-family: monospace;
+    color: white;
+    animation: blink 1.5s linear infinite;
+}
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+
+
+
+@media only screen and (max-width: 800px){
+	.main{
+		
+		margin-left: 0px;
+	}
+	.main-menu ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		position: absolute;
+		top: 100px;
+		left: 0px;
+		background-color: rgba(67, 67, 67, 0.8);
+		width: 100%;
+		transition: max-height 0.5s;
+		overflow: hidden;
+        padding: 20px auto;
+        text-align: center;
+		
+	}
+
+	.main-menu ul li{
+        text-align: center;
+        margin: 0;        
+		margin-bottom: 15px;        
+	}
+
+    .main-menu ul li:first-child{
+        margin-top: 10px;     
+	}
+
+	.main-menu ul li a{
+		color: #ff7a18;
+	}
+
+	.main-menu #menu-icon{
+		display: block;
+		cursor: pointer;
+		margin-left: 20px;
+	}
+
+}
+
+.menuitems{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 800px) {
+    .main-navbar {
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .main h1{
+        font-size: 3.5rem;
+    }
+
+    .first-letter{
+        font-size: 5.1rem;
+    }
+
+    .main-text {
+        padding: 10px 5px;
+        padding-top: 40px;
+        width: 90%;
+    }
+
+    .main h3{
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .main h1{
+        font-size: 1.5rem;
+    }
+      
+    .first-letter{
+        font-size: 3.1rem;
+    }
+
+}
+
+
